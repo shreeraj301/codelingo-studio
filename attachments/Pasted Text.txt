@@ -1,0 +1,23 @@
+Act as a Principal Frontend Engineer and UX Architect. Build a single-page web application prototype for "CodeLingo"—a gamified, Duolingo-like platform that teaches coding concepts to non-technical professionals. 
+
+The application must run entirely in the browser with zero external backend dependencies.
+
+### 1. Visual Layout & UI (Desktop Focused)
+Create a clean, modern, dark-themed three-pane interface using Tailwind CSS and modern UI components:
+- Top Navigation Header: Include a brand logo ("CodeLingo"), a horizontal lesson progress bar (e.g., 60% complete), a daily streak counter (🔥 5 Days), and a health indicator (❤️ 4/5 Hearts).
+- Left Pane (Instruction Panel): Displays the lesson objective. Title: "Module 1: Styling the Call-to-Action". Body text explaining what padding and background colors do in CSS in simple, non-jargon terms. Clear instruction: "Change the button's background color to 'bg-blue-600' and text color to white."
+- Middle Pane (Micro Code Editor): A simplified, syntax-highlighted editor box mimicking an IDE. It should display a code snippet where the user fills in a blank or edits a specific line.
+- Right Pane (Live Preview Canvas): A visual container labeled "Live App Preview". It renders a real HTML button component that updates dynamically in real-time as the user types in the middle pane.
+- Footer Control: A sticky bottom bar containing a "Check Answer" button that transitions to a green "Continue" state if the input matches the target solution.
+
+### 2. Functional Code & Interactivity
+- Build state management where the text input in the editor directly updates the CSS/HTML properties of the element in the Live Preview pane.
+- Implement basic validation: If the user inputs the correct class string (e.g., "bg-blue-600") and clicks "Check Answer", trigger a success state (play a subtle chime sound or show a confetti effect, display a green success banner at the bottom).
+- If the input is incorrect, trigger an error state, display a red banner with a helpful hint, and deduct one heart from the top header tracker.
+
+### 3. Tech Stack Requirements
+- Framework: React with TypeScript.
+- Styling: Tailwind CSS for clean layouts, using a modern aesthetic (rounded corners, subtle gradients, crisp borders).
+- Icons: Lucide-react for the heart, streak fire, and status icons.
+
+Focus on building a highly interactive, seamless micro-learning loop that feels polished, smooth, and highly encouraging for beginners.
